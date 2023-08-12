@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\AbrirPropiedadController;
+use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\PropiedadesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/principal', [PrincipalController::class, 'mostrarPrin' ]);
+Route::get('/usuarios', [UsuariosController::class, 'mostrarUsuarios']);
 
+Route::get('/propiedades', [PropiedadesController::class, 'mostrarPropiedades']);
 
+Route::get('/propiedades/open', [AbrirPropiedadController::class, 'openPropiedad']);
