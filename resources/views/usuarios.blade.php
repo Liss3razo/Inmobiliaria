@@ -9,8 +9,8 @@
     <title>Document</title>
     <style>
      #bg-img{
-        width: 100%; 
-        height: 100%; 
+      width: 90rem; 
+           height: 70rem; 
         background-color:blue;    
       }
 
@@ -63,7 +63,7 @@ button{
         <button>VENTAS</button>
         <button>ALQUILERES</button>
       </div>
-      <img src="http://localhost/Inmobiliaria/resources/views/recursos/img3.jpg" style="width: 100%; height: 100%;" >
+      <img src="http://localhost/Inmobiliaria/inmobiliaria/resources/views/recursos/img3.jpg" style="width: 100%; height: 100%;" >
       
       </div>
 
