@@ -58,7 +58,7 @@ button{
 
       <div id="prinId">
       <div class="card" style="width: 18rem;">
-        <img src="http://localhost/Inmobiliaria/resources/views/recursos/img2.jpg" class="card-img-top" alt="...">
+        <img src="http://localhost/Inmobiliaria/inmobiliaria/resources/views/recursos/img2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Propiedad 1</h5>
           <p class="card-text">Ubicacion y descripcion</p>
