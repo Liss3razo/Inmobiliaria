@@ -14,10 +14,6 @@
       }
 
     #prinId{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -40%);
     height: 100%;
     width: 100%;
     padding: 2rem; 
@@ -29,15 +25,64 @@
         
 }
 button{
-  background-color:rgb(236, 236, 255);
-  height: 3rem;
+  border-color:rgb(17, 131, 97);
+  border-style: groove;
+  border-inline-width: 0.2rem;
+  background-color: white;
+  height: 2.5rem;
   width: 9rem;
-  border-radius: 1rem;
+  border-radius: 0.4rem;
 
 }
-       
 
-    </style>
+#buscador{
+  display: flex;
+   flex-direction: column;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.705);
+  align-content: space-between;
+  padding: 1.4rem 8rem 1.4rem 8rem;
+  
+
+}
+.buscar{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between
+}
+
+#bot{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  
+}
+
+#top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center
+
+}
+
+#top input{
+  height: 1.8rem;
+  width: 42rem;
+}
+
+input{
+  height: 1.8rem;
+  width: 17rem;
+}
+
+label{
+  color: #e3f2fd
+}
+
+
+</style>
 </head>
 <body>
    
@@ -46,20 +91,49 @@ button{
         <div>
         <a class="navbar-brand">INMOBILIARIA IS</a>
         <a class="navbar-brand" href="#">Usuarios</a>
-        <a class="navbar-brand" href="#">Favoritos</a>
+        <a class="navbar-brand" href="#">Contáctanos</a>
+        <a class="navbar-brand" href="#">Ventas</a>
+        <a class="navbar-brand" href="#">Arquiler</a>
 
       </div>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
       </nav>
 
+      <div id="im">
+        <img src="http://localhost/Inmobiliaria/resources/views/recursos/img3.jpg" style="width: 100%; height: 300px;" >
+      </div>
+
+      <div id="buscador">
+          <div id="top">
+                <label>Ubicacion:</label> 
+                <input type="text">
+          </div>
+          <div id="bot">
+                 <div class="buscar">
+                    <label for="">Precio desde:</label> 
+                     <input type="text">
+                     <label for="">Precio hasta:</label> 
+                     <input type="text">
+                 </div>
+                 <div class="buscar">
+                     <label for="">Tipo de negocio:</label> 
+                     <input type="text">
+                     <label for="">Tipo de propiedad:</label> 
+                     <input type="text">
+                  </div>
+                  <div class="buscar">
+                    <label for="">Estado de la propiedad:</label> 
+                  <input type="text">
+
+                  <button>buscar</button>
+                 </div>
+            </div>
+      </div>
+        
       <div id="prinId">
-      <div class="card" style="width: 18rem;">
-        <img src="http://localhost/Inmobiliaria/inmobiliaria/resources/views/recursos/img2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card" style="width: 18rem;">
+         <img src="http://localhost/Inmobiliaria/resources/views/recursos/img2.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
           <h5 class="card-title">Propiedad 1</h5>
           <p class="card-text">Ubicacion y descripcion</p>
         </div>
@@ -73,10 +147,10 @@ button{
           <a href="#" class="btn btn-primary"> Ver mas</a>
         </div>
       </div>
+      
 
 
       
-    </div>
 
       
       
