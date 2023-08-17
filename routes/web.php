@@ -5,6 +5,7 @@ use App\Http\Controllers\AbrirPropiedadController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\PropiedadesController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,13 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+Route::get('/Inicio', [PostController::class, 'index']);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 
 
 
@@ -28,6 +32,15 @@ Route::get('/login', [LoginController::class, 'log']);
 Route::get('/usuarios', [UsuariosController::class, 'mostrarUsuarios']);
 Route::get('/propiedades', [PropiedadesController::class, 'mostrarPropiedades']);
 Route::get('/propiedades/open', [AbrirPropiedadController::class, 'openPropiedad']);
+=======
+Route::get('/login', [PostController::class, 'log']);
+
+Route::get('/usuarios', [PostController::class, 'mostrarUsuarios']);
+
+Route::get('/propiedades', [PostController::class, 'mostrarPropiedades']);
+
+Route::get('/propiedades/open', [PostController::class, 'openPropiedad']);
+>>>>>>> 6c86daaba055c653801e2ff2aeb493976169347e
 
 
 
